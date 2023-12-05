@@ -5,7 +5,7 @@ require("dotenv");
 const express = require("express");
 const cors = require("cors");
 
-// Custom modules
+// Custom
 const corsOptions = require("./utils/cors.options");
 const errorHandler = require("./utils/errorHandler");
 
@@ -14,6 +14,7 @@ const app = express();
 
 // Middlewares
 app.use(cors(corsOptions));
+app.use("/api", require("./routes"));
 
 
 
