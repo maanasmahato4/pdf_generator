@@ -16,7 +16,11 @@ const developmentLogger = winston.createLogger({
         timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
         errors({ stack: true }),
         devLogFormat
-    )
+    ),
+    transports: [
+        new winston.transports.Console(),
+        new winston.transports.File({ dirname: "logs", filename: "devLog.log" })
+    ]
 });
 
 const productionLogger = winston.createLogger({
@@ -25,7 +29,10 @@ const productionLogger = winston.createLogger({
         label({ label: "production logger" }),
         timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
         prodLogFormat
-    )
+    ),
+    transports: [
+        new winston.transports.File({ dirname: "logs", filename: 'prodLog.log' })
+    ]
 });
 
 module.exports = {

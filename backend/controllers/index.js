@@ -1,16 +1,20 @@
+const path = require("path");
+const fsPromise = require("fs").promises;
 const pool = require("../database/database");
 const logger = require("../utils/logger");
 
-function getAllFiles(request, response) {
+async function getAllFiles(request, response) {
     logger.info(`${request.url} GET /api/`, null);
     try {
-        return response.sendStatus(200);
+        const pdf = await pool.query('SELECT * FROM pdf_storage');
+        const file_path = path.join(__dirname, "uploads", pdf.rows);
+        return response.status(200).json({ files: pdf });
     } catch (error) {
         logger.error(`${request.url} GET /api/`, error);
     };
 };
 
-function generateNewPdf(request, response) {
+async function generateNewPdf(request, response) {
     logger.info(`${request.url} POST /api/`, null);
     try {
         return response.sendStatus(200);
