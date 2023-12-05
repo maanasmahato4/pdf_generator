@@ -8,3 +8,6 @@ function limiter(interval, limit) {
         legacyHeaders: false
     });
 };
+
+
+module.exports = {limiter};
