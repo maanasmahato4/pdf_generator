@@ -4,7 +4,6 @@ require("dotenv");
 // Third party libraries
 const express = require("express");
 const cors = require("cors");
-const winston = require("winston");
 
 // Custom modules
 const corsOptions = require("./utils/cors.options");
