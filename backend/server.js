@@ -17,6 +17,9 @@ const app = express();
 // Call the function to test the database connection
 testDatabaseConnection();
 
+// serve static files
+app.use(express.static("uploads"));
+
 // Middlewares
 app.use(cors(corsOptions));
 app.use(helmet());

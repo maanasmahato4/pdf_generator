@@ -150,3 +150,114 @@ SyntaxError: Expected double-quoted property name in JSON at position 118
 2023-12-07 01:53:13 info: Current time from the database: Thu Dec 07 2023 01:53:13 GMT+0545 (Nepal Time)
 2023-12-07 01:53:16 info: / POST /api/
 2023-12-07 01:53:17 info: / POST /api/
+2023-12-07 01:53:24 info: Current time from the database: Thu Dec 07 2023 01:53:24 GMT+0545 (Nepal Time)
+2023-12-07 01:54:54 info: Current time from the database: Thu Dec 07 2023 01:54:54 GMT+0545 (Nepal Time)
+2023-12-07 01:54:58 info: Current time from the database: Thu Dec 07 2023 01:54:58 GMT+0545 (Nepal Time)
+2023-12-07 01:55:07 info: Current time from the database: Thu Dec 07 2023 01:55:06 GMT+0545 (Nepal Time)
+2023-12-07 01:57:18 info: Current time from the database: Thu Dec 07 2023 01:57:18 GMT+0545 (Nepal Time)
+2023-12-07 01:57:20 info: Current time from the database: Thu Dec 07 2023 01:57:20 GMT+0545 (Nepal Time)
+2023-12-07 01:59:15 info: Current time from the database: Thu Dec 07 2023 01:59:15 GMT+0545 (Nepal Time)
+2023-12-07 01:59:25 info: / GET /api/
+2023-12-07 01:59:26 error: / GET /api/ The "path" argument must be of type string. Received an instance of Array
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received an instance of Array
+    at new NodeError (node:internal/errors:406:5)
+    at validateString (node:internal/validators:162:11)
+    at Object.join (node:path:433:7)
+    at getAllFiles (E:\pdf_generator\backend\controllers\index.js:18:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 02:00:11 info: Current time from the database: Thu Dec 07 2023 02:00:11 GMT+0545 (Nepal Time)
+2023-12-07 02:00:15 info: /files GET /api/
+2023-12-07 02:00:15 error: /files GET /api/ The "path" argument must be of type string. Received an instance of Array
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received an instance of Array
+    at new NodeError (node:internal/errors:406:5)
+    at validateString (node:internal/validators:162:11)
+    at Object.join (node:path:433:7)
+    at getAllFiles (E:\pdf_generator\backend\controllers\index.js:18:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 02:00:46 info: Current time from the database: Thu Dec 07 2023 02:00:46 GMT+0545 (Nepal Time)
+2023-12-07 02:00:48 info: Current time from the database: Thu Dec 07 2023 02:00:48 GMT+0545 (Nepal Time)
+2023-12-07 02:00:51 info: /files GET /api/
+2023-12-07 02:01:10 info: Current time from the database: Thu Dec 07 2023 02:01:10 GMT+0545 (Nepal Time)
+2023-12-07 02:01:12 info: /files GET /api/
+2023-12-07 02:02:43 info: Current time from the database: Thu Dec 07 2023 02:02:43 GMT+0545 (Nepal Time)
+2023-12-07 02:03:42 info: Current time from the database: Thu Dec 07 2023 02:03:42 GMT+0545 (Nepal Time)
+2023-12-07 02:03:44 info: Current time from the database: Thu Dec 07 2023 02:03:44 GMT+0545 (Nepal Time)
+2023-12-07 02:03:50 info: Current time from the database: Thu Dec 07 2023 02:03:50 GMT+0545 (Nepal Time)
+2023-12-07 02:03:54 info: Current time from the database: Thu Dec 07 2023 02:03:54 GMT+0545 (Nepal Time)
+2023-12-07 02:03:56 info: Current time from the database: Thu Dec 07 2023 02:03:56 GMT+0545 (Nepal Time)
+2023-12-07 02:03:59 info: /files GET /api/
+2023-12-07 02:03:59 error: /files GET /api/ The "path" argument must be of type string. Received an instance of Object
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received an instance of Object
+    at new NodeError (node:internal/errors:406:5)
+    at validateString (node:internal/validators:162:11)
+    at Object.join (node:path:433:7)
+    at E:\pdf_generator\backend\controllers\index.js:18:18
+    at Array.forEach (<anonymous>)
+    at getAllFiles (E:\pdf_generator\backend\controllers\index.js:17:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 02:04:11 info: Current time from the database: Thu Dec 07 2023 02:04:11 GMT+0545 (Nepal Time)
+2023-12-07 02:04:14 info: /files GET /api/
+2023-12-07 02:04:35 info: Current time from the database: Thu Dec 07 2023 02:04:35 GMT+0545 (Nepal Time)
+2023-12-07 02:04:38 info: /files GET /api/
+2023-12-07 02:04:46 info: Current time from the database: Thu Dec 07 2023 02:04:46 GMT+0545 (Nepal Time)
+2023-12-07 02:04:48 info: /files GET /api/
+2023-12-07 02:05:09 info: Current time from the database: Thu Dec 07 2023 02:05:09 GMT+0545 (Nepal Time)
+2023-12-07 02:05:12 info: Current time from the database: Thu Dec 07 2023 02:05:12 GMT+0545 (Nepal Time)
+2023-12-07 02:05:31 info: Current time from the database: Thu Dec 07 2023 02:05:31 GMT+0545 (Nepal Time)
+2023-12-07 02:05:33 info: Current time from the database: Thu Dec 07 2023 02:05:33 GMT+0545 (Nepal Time)
+2023-12-07 02:05:43 info: Current time from the database: Thu Dec 07 2023 02:05:43 GMT+0545 (Nepal Time)
+2023-12-07 02:06:42 info: /files GET /api/
+2023-12-07 02:11:17 info: Current time from the database: Thu Dec 07 2023 02:11:17 GMT+0545 (Nepal Time)
+2023-12-07 02:12:40 info: Current time from the database: Thu Dec 07 2023 02:12:40 GMT+0545 (Nepal Time)
+2023-12-07 02:13:31 info: Current time from the database: Thu Dec 07 2023 02:13:31 GMT+0545 (Nepal Time)
+2023-12-07 02:14:01 info: Current time from the database: Thu Dec 07 2023 02:14:01 GMT+0545 (Nepal Time)
+2023-12-07 02:14:05 info: Current time from the database: Thu Dec 07 2023 02:14:05 GMT+0545 (Nepal Time)
+2023-12-07 02:14:43 info: Current time from the database: Thu Dec 07 2023 02:14:43 GMT+0545 (Nepal Time)
+2023-12-07 02:15:32 info: Current time from the database: Thu Dec 07 2023 02:15:32 GMT+0545 (Nepal Time)
+2023-12-07 02:16:13 info: Current time from the database: Thu Dec 07 2023 02:16:13 GMT+0545 (Nepal Time)
+2023-12-07 02:16:16 info: Current time from the database: Thu Dec 07 2023 02:16:16 GMT+0545 (Nepal Time)
+2023-12-07 02:16:35 info: Current time from the database: Thu Dec 07 2023 02:16:35 GMT+0545 (Nepal Time)
+2023-12-07 02:16:42 info: Current time from the database: Thu Dec 07 2023 02:16:42 GMT+0545 (Nepal Time)
+2023-12-07 02:16:56 info: Current time from the database: Thu Dec 07 2023 02:16:56 GMT+0545 (Nepal Time)
+2023-12-07 02:17:05 info: Current time from the database: Thu Dec 07 2023 02:17:05 GMT+0545 (Nepal Time)
+2023-12-07 02:17:39 info: Current time from the database: Thu Dec 07 2023 02:17:39 GMT+0545 (Nepal Time)
+2023-12-07 02:18:01 info: Current time from the database: Thu Dec 07 2023 02:18:01 GMT+0545 (Nepal Time)
+2023-12-07 02:18:04 info: Current time from the database: Thu Dec 07 2023 02:18:04 GMT+0545 (Nepal Time)
+2023-12-07 02:19:01 info: Current time from the database: Thu Dec 07 2023 02:19:01 GMT+0545 (Nepal Time)
+2023-12-07 02:19:03 info: /download/1 GET /api/download/:id
+2023-12-07 02:19:03 error: /download/1 GET /api/download/:id Cannot read properties of undefined (reading 'file_path')
+TypeError: Cannot read properties of undefined (reading 'file_path')
+    at downloadpdf (E:\pdf_generator\backend\controllers\index.js:33:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 02:19:29 info: Current time from the database: Thu Dec 07 2023 02:19:29 GMT+0545 (Nepal Time)
+2023-12-07 02:19:30 info: /download/1 GET /api/download/:id
+2023-12-07 02:19:30 error: /download/1 GET /api/download/:id Cannot read properties of undefined (reading 'file_path')
+TypeError: Cannot read properties of undefined (reading 'file_path')
+    at downloadpdf (E:\pdf_generator\backend\controllers\index.js:34:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 02:19:39 info: Current time from the database: Thu Dec 07 2023 02:19:39 GMT+0545 (Nepal Time)
+2023-12-07 02:19:53 info: Current time from the database: Thu Dec 07 2023 02:19:53 GMT+0545 (Nepal Time)
+2023-12-07 02:19:58 info: /download/1 GET /api/download/:id
+2023-12-07 02:19:58 error: /download/1 GET /api/download/:id Cannot read properties of undefined (reading 'file_path')
+TypeError: Cannot read properties of undefined (reading 'file_path')
+    at downloadpdf (E:\pdf_generator\backend\controllers\index.js:34:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 02:20:10 info: Current time from the database: Thu Dec 07 2023 02:20:10 GMT+0545 (Nepal Time)
+2023-12-07 02:20:12 info: /download/1 GET /api/download/:id
+2023-12-07 02:20:12 error: /download/1 GET /api/download/:id Cannot read properties of undefined (reading 'file_path')
+TypeError: Cannot read properties of undefined (reading 'file_path')
+    at downloadpdf (E:\pdf_generator\backend\controllers\index.js:34:46)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-07 02:20:35 info: Current time from the database: Thu Dec 07 2023 02:20:35 GMT+0545 (Nepal Time)
+2023-12-07 02:20:58 info: Current time from the database: Thu Dec 07 2023 02:20:58 GMT+0545 (Nepal Time)
+2023-12-07 02:20:58 info: /download/1 GET /api/download/:id
+2023-12-07 02:20:58 error: /download/1 GET /api/download/:id syntax error at or near "RETURNING"
+error: syntax error at or near "RETURNING"
+    at E:\pdf_generator\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async downloadpdf (E:\pdf_generator\backend\controllers\index.js:29:21)
+2023-12-07 02:21:16 info: Current time from the database: Thu Dec 07 2023 02:21:16 GMT+0545 (Nepal Time)
+2023-12-07 02:21:43 info: /download/1 GET /api/download/:id
+2023-12-07 02:22:03 info: Current time from the database: Thu Dec 07 2023 02:22:03 GMT+0545 (Nepal Time)
+2023-12-07 02:22:04 info: /download/1 GET /api/download/:id
+2023-12-07 02:22:08 info: /download/3 GET /api/download/:id
