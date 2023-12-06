@@ -1,5 +1,3 @@
-const path = require("path");
-const fsPromise = require("fs").promises;
 const pool = require("../database/database");
 const { logger } = require("../utils/utilityFunctions");
 const createTable = require("../utils/createTable");

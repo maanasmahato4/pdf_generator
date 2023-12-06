@@ -261,3 +261,5 @@ error: syntax error at or near "RETURNING"
 2023-12-07 02:22:03 info: Current time from the database: Thu Dec 07 2023 02:22:03 GMT+0545 (Nepal Time)
 2023-12-07 02:22:04 info: /download/1 GET /api/download/:id
 2023-12-07 02:22:08 info: /download/3 GET /api/download/:id
+2023-12-07 02:22:20 info: Current time from the database: Thu Dec 07 2023 02:22:20 GMT+0545 (Nepal Time)
+2023-12-07 02:22:38 info: Current time from the database: Thu Dec 07 2023 02:22:38 GMT+0545 (Nepal Time)
