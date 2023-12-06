@@ -122,3 +122,31 @@ error: syntax error at or near "INERT"
 2023-12-06 19:23:40 info: Current time from the database: Wed Dec 06 2023 19:23:40 GMT+0545 (Nepal Time)
 2023-12-06 19:24:05 info: Current time from the database: Wed Dec 06 2023 19:24:05 GMT+0545 (Nepal Time)
 2023-12-06 19:24:14 info: / POST /api/
+2023-12-07 01:50:40 info: Current time from the database: Thu Dec 07 2023 01:50:40 GMT+0545 (Nepal Time)
+2023-12-07 01:51:02 error: /api/ GET /api/ Expected double-quoted property name in JSON at position 118
+SyntaxError: Expected double-quoted property name in JSON at position 118
+    at JSON.parse (<anonymous>)
+    at parse (E:\pdf_generator\backend\node_modules\body-parser\lib\types\json.js:89:19)
+    at E:\pdf_generator\backend\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (E:\pdf_generator\backend\node_modules\raw-body\index.js:231:16)
+    at done (E:\pdf_generator\backend\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (E:\pdf_generator\backend\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:514:28)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-12-07 01:51:43 info: Current time from the database: Thu Dec 07 2023 01:51:43 GMT+0545 (Nepal Time)
+2023-12-07 01:52:01 info: / POST /api/
+2023-12-07 01:52:56 info: / POST /api/
+2023-12-07 01:52:57 info: / POST /api/
+2023-12-07 01:52:57 info: / POST /api/
+2023-12-07 01:52:58 info: / POST /api/
+2023-12-07 01:52:59 info: / POST /api/
+2023-12-07 01:52:59 info: / POST /api/
+2023-12-07 01:53:00 info: / POST /api/
+2023-12-07 01:53:00 info: / POST /api/
+2023-12-07 01:53:01 info: / POST /api/
+2023-12-07 01:53:02 info: / POST /api/
+2023-12-07 01:53:13 info: Current time from the database: Thu Dec 07 2023 01:53:13 GMT+0545 (Nepal Time)
+2023-12-07 01:53:16 info: / POST /api/
+2023-12-07 01:53:17 info: / POST /api/
