@@ -1,0 +1,37 @@
+2023-12-06 03:16:47 info: / POST /api/
+undefined
+2023-12-06 03:19:55 info: / POST /api/
+undefined
+2023-12-06 03:23:13 info: / POST /api/
+undefined
+2023-12-06 03:23:39 info: / POST /api/
+undefined
+2023-12-06 03:23:39 error: / POST /api/ Connection terminated unexpectedly
+Error: Connection terminated unexpectedly
+    at E:\pdf_generator\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async generateNewPdf (E:\pdf_generator\backend\controllers\index.js:28:9)
+2023-12-06 03:24:11 info: / POST /api/
+undefined
+2023-12-06 03:24:11 error: / POST /api/ Connection terminated unexpectedly
+Error: Connection terminated unexpectedly
+    at E:\pdf_generator\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async generateNewPdf (E:\pdf_generator\backend\controllers\index.js:28:9)
+2023-12-06 03:25:37 info: / POST /api/
+undefined
+2023-12-06 03:25:37 error: / POST /api/ Connection terminated unexpectedly
+Error: Connection terminated unexpectedly
+    at E:\pdf_generator\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async generateNewPdf (E:\pdf_generator\backend\controllers\index.js:28:9)
+2023-12-06 17:42:13 info: Current time from the database: 
+undefined
+2023-12-06 17:42:22 info: Current time from the database: 
+undefined
+2023-12-06 17:42:42 info: Current time from the database: Wed Dec 06 2023 17:42:42 GMT+0545 (Nepal Time)
+undefined
+2023-12-06 17:42:56 info: Current time from the database: Wed Dec 06 2023 17:42:56 GMT+0545 (Nepal Time)
+undefined
+2023-12-06 17:43:01 info: Current time from the database: Wed Dec 06 2023 17:43:01 GMT+0545 (Nepal Time)
+undefined

@@ -3,7 +3,7 @@ const pool = require("../database/database");
 async function createTable(table) {
     return pool.query(`
     CREATE TABLE IF NOT EXISTS ${table} (
-        id PRIMARY SERIAL KEY,
+        id SERIAL PRIMARY KEY,
         file_path TEXT
     );
     `);
