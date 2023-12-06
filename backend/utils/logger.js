@@ -2,7 +2,11 @@ const winston = require("winston");
 const { printf, combine, timestamp, label, errors } = winston.format;
 
 const devLogFormat = printf(({ level, message, timestamp, stack }) => {
-    return `${timestamp} ${level}: ${message}\n${stack}`;
+    if (stack) {
+        return `${timestamp} ${level}: ${message}\n${stack}`;
+    } else {
+        return `${timestamp} ${level}: ${message}`;
+    }
 });
 
 const prodLogFormat = printf(({ level, message, timestamp }) => {
