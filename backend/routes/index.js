@@ -6,7 +6,7 @@ const { limiter } = require("../middlewares/rate_limiter.middleware"); // Rate l
 const { validator } = require("../middlewares/validator"); // data validator
 
 // Controller functions for the pdf api
-const { getAllFiles, downloadpdf, generateNewPdf } = require("../controllers");
+const { getAllFiles, downloadpdf, generateNewPdf } = require("../controllers/pdf.controller");
 
 
 router
