@@ -1,17 +1,20 @@
 const joi = require("joi");
 const { BAD_REQUEST_EXCEPTION } = require("../constants/exception.constant");
 
-const schema = joi.object({
+const pdf_schema = joi.object({
     title: joi.string().required(),
     body: joi.string().required(),
     conclusion: joi.string().required()
 });
 
+const user_schema = joi.object({
+    email: joi.string().email().required(),
+    password: joi.string().required()
+});
 
-function validator(request, response, next) {
+function pdf_validator(request, response, next) {
     try {
-        const { value, error, warning } = schema.validate(request.body);
-        console.log(value, error, warning);
+        const { value, error, warning } = pdf_schema.validate(request.body);
         if (error) {
             return response.status(400).json({ error: BAD_REQUEST_EXCEPTION, message: error.message })
         };
@@ -21,4 +24,16 @@ function validator(request, response, next) {
     };
 };
 
-module.exports = { validator };
+function user_validator(request, response, next) {
+    try {
+        const { value, error, warning } = user_schema.validate(request.body);
+        if (error) {
+            return response.status(400).json({ error: BAD_REQUEST_EXCEPTION, message: error.message });
+        };
+        next();
+    } catch (error) {
+        return response.sendStatus(500);
+    };
+};
+
+module.exports = { pdf_validator, user_validator};
