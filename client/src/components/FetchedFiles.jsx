@@ -1,8 +1,12 @@
-import React from 'react'
+import {
+  Container
+} from "@mantine/core";
 
 function FetchedFiles() {
   return (
-    <div>FetchedFiles</div>
+    <Container style={{ marginBlock: "2rem" }}>
+      <h1 style={{ textAlign: "center" }}>Files</h1>
+    </Container>
   )
 }
 

@@ -12,7 +12,7 @@ const { getAllFiles, downloadpdf, generateNewPdf } = require("../controllers");
 router
     .get("/", limiter(2 * 60 * 1000, 50), getAllFiles)
     .get("/download/:id", limiter(60 * 1000, 5), downloadpdf)
-    .post("/", validator, limiter(60 * 1000, 20), generateNewPdf);
+    .post("/", limiter(60 * 1000, 20), generateNewPdf);
 
 
 module.exports = router;
