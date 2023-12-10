@@ -43,14 +43,15 @@ async function generateNewPdf(request, response) {
     try {
         await createTable('pdf_storage');
         const generatedPdf_path = await generatePDF(request.body);
-        const savedToDatabase = await pool.query(
+       /*  const savedToDatabase = await pool.query(
             'INSERT INTO pdf_storage (file_path) VALUES ($1) RETURNING *',
             [generatedPdf_path]
         );
         if (!savedToDatabase) {
             return response.sendStatus(500);
         }
-        return response.status(200).json({ status: "success", file: savedToDatabase.rows[0] });
+        return response.status(200).json({ status: "success", file: savedToDatabase.rows[0] }); */
+        return response.sendStatus(200);
     } catch (error) {
         logger.error(`${request.url} POST /api/`, error);
     };

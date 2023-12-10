@@ -3,7 +3,7 @@ import {
   Button,
   Container
 } from "@mantine/core";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { Parser } from 'htmlparser2';
@@ -12,15 +12,12 @@ const modules = {
   toolbar: [
     [{ font: [] }],
     [{ header: [1, 2, 3, 4, 5, 6, false] }],
-    ["bold", "italic", "underline", "strike"],
-    [{ color: [] }, { background: [] }],
     [{ script: "sub" }, { script: "super" }],
     ["blockquote", "code-block"],
     [{ list: "ordered" }, { list: "bullet" }],
     [{ indent: "-1" }, { indent: "+1" }, { align: [] }],
-    ["link", "image", "video"],
-    ["clean"],
-  ],
+    ["link", "image"]
+  ]
 };
 
 function extractTags(html) {
@@ -58,9 +55,17 @@ function TextEditor() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setExtractedHtml(extractTags(value));
-    const response = await axios.post("http://localhost:3000/api/", { content: extractedHtml });
-    console.log(response);
+    console.log(extractedHtml);
   };
+
+  /* useEffect(() => {
+    if(extractedHtml.length > 0){
+        axios.post("http://localhost:3000/api/", { content: extractedHtml })
+        .then((response) => console.log(response))
+        .catch((error) => console.log(error));
+    };
+  }, [extractedHtml]);
+ */
 
   return (
     <Container style={{ marginBlock: "2rem", height: "100vh" }}>
