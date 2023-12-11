@@ -55,17 +55,17 @@ function TextEditor() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setExtractedHtml(extractTags(value));
-    console.log(extractedHtml);
+
   };
 
-  /* useEffect(() => {
-    if(extractedHtml.length > 0){
-        axios.post("http://localhost:3000/api/", { content: extractedHtml })
+  useEffect(() => {
+    if (extractedHtml.length > 0) {
+      console.log(extractedHtml);
+      axios.post("http://localhost:3000/api/", { content: extractedHtml })
         .then((response) => console.log(response))
         .catch((error) => console.log(error));
     };
   }, [extractedHtml]);
- */
 
   return (
     <Container style={{ marginBlock: "2rem", height: "100vh" }}>
