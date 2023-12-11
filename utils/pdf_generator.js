@@ -6,12 +6,12 @@ const { generateUniqueName } = require("./utilityFunctions");
 // new document
 async function generatePDF(extractedHtml) {
     const content = extractedHtml.content;
-    const attributes = {
+    /* const attributes = {
         "ql-align-left": "left",
         "ql-align-center": "center",
         "ql-align-right": "right",
         "ql-align-justify": "justify"
-    };
+    }; */
     //const fonts = ['ql-font-monospace', 'ql-font-serif', ''];
     const tags = {
         'p': { fontSize: 12 },
