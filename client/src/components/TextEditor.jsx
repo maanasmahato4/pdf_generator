@@ -24,8 +24,14 @@ function extractTags(html) {
   let extractedDataArray = [], currentTag = null, currentAttributes = {}, currentText = "";
   const handler = new Parser({
     onopentag(name, attribs) {
-      currentTag = name;
-      currentAttributes = { ...attribs };
+      if (name === "br") {
+        currentTag = name;
+        currentAttributes = { ...attribs };
+        currentText = "\n"
+      } else {
+        currentTag = name;
+        currentAttributes = { ...attribs };
+      }
     },
     ontext(text) {
       currentText = text;
@@ -37,6 +43,9 @@ function extractTags(html) {
           attributes: currentAttributes,
           text: currentText
         });
+        currentTag = null;
+        currentAttributes = [];
+        currentText = ""
       };
     }
   }, { decodeEntities: true });
