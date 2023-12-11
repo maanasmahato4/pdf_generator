@@ -13,7 +13,18 @@ async function generatePDF(extractedHtml) {
         "ql-align-justify": "justify"
     };
     //const fonts = ['ql-font-monospace', 'ql-font-serif', ''];
-    //const tags = ['p', 'span', 'br', 'strong', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6']
+    const tags = {
+        'p': { fontSize: 12 },
+        'span': { fontSize: 12 },
+        'br': { moveDown: true },
+        'strong': { fontSize: 10 },
+        'h1': { fontSize: 32 },
+        'h2': { fontSize: 24 },
+        'h3': { fontSize: 18 },
+        'h4': { fontSize: 16 },
+        'h5': { fontSize: 14 },
+        'h6': { fontSize: 12 }
+    };
     try {
         let pdfFilePath, uniqueName;
         uniqueName = generateUniqueName();
@@ -26,20 +37,21 @@ async function generatePDF(extractedHtml) {
         doc.pipe(fs.createWriteStream(pdfFilePath));
 
         content.forEach(obj => {
-            if (obj.attributes?.class) {
-                for (const attribute in attributes) {
-                    if (obj.attributes.class.split("-")[2] === attributes[attribute]) {
-                        console.log(`attribute: ${attribute} value: ${obj.attributes.class.split("-")[2]}`);
-                        doc.text(obj.text, {
-                            align: obj.attributes.class.split("-")[2]
-                        });
-                    };
+            const tagExist = tags[obj.tag];
+            if (tagExist) {
+                const alignmentRegex = new RegExp(`ql-align-(left|center|right|justify)`);
+                const matched = alignmentRegex.exec(obj.attributes.class);
+                if (matched) {
+                    doc.fontSize(tagExist.fontSize);
+                    doc.text(obj.text, {
+                        align: matched[1]
+                    });
+                } else {
+                    doc.fontSize(tagExist.fontSize);
+                    doc.text(obj.text);
                 };
-            } else {
-                doc.text(obj.text);
             };
         });
-
         doc.end();
         return pdfFilePath;
     } catch (error) {
