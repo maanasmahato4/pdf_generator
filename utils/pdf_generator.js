@@ -53,7 +53,7 @@ async function generatePDF(extractedHtml) {
             };
         });
         doc.end();
-        return pdfFilePath;
+        return `${process.env.PROTOCOL}://${process.env.HOSTNAME}:${process.env.PORT}/uploads/${uniqueName}.pdf`;
     } catch (error) {
         throw new Error(error);
     };

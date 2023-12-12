@@ -18,7 +18,7 @@ const app = express();
 testDatabaseConnection();
 
 // serve static files
-app.use(express.static("uploads"));
+app.use("/uploads", express.static("uploads"));
 
 // Middlewares
 app.use(cors(corsOptions));

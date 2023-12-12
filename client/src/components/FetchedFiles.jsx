@@ -27,7 +27,7 @@ function FetchedFiles() {
     <Container style={{ marginBlock: "2rem" }}>
       <h1 style={{ textAlign: "center" }}>Files</h1>
       {files.map(file => {
-        return <span key={file.id}>{file.file_path}</span>
+        return <p style={{marginBlock: "1rem"}} key={file.id}>{file.file_path}</p>
       })}
     </Container>
   )
