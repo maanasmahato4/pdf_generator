@@ -56,7 +56,6 @@ function extractTags(html) {
 };
 
 
-
 function TextEditor() {
   const [value, setValue] = useState("");
   const [extractedHtml, setExtractedHtml] = useState([]);
@@ -69,7 +68,6 @@ function TextEditor() {
 
   useEffect(() => {
     if (extractedHtml.length > 0) {
-      console.log(extractedHtml);
       axios.post("http://localhost:3000/api/", { content: extractedHtml })
         .then((response) => console.log(response))
         .catch((error) => console.log(error));

@@ -5,7 +5,7 @@ import {
   useEffect, useState
 } from "react";
 import axios from "axios";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function FetchedFiles() {
   const [files, setFiles] = useState([]);
@@ -21,13 +21,15 @@ function FetchedFiles() {
 
     getPdfs();
   }, []);
-
-  console.log(files);
   return (
-    <Container style={{ marginBlock: "2rem" }}>
+    <Container style={{ marginBlock: "2rem", textAlign: "center" }}>
       <h1 style={{ textAlign: "center" }}>Files</h1>
-      {files.map(file => {
-        return <p style={{marginBlock: "1rem"}} key={file.id}>{file.file_path}</p>
+      {files.map((file, idx) => {
+        const fileSegments = file.file_path.split(/[/\\]/).filter(segment => !!segment);
+        const fileName = fileSegments[fileSegments.length - 1];
+        return <div style={{ marginBlock: "0.5rem" }} key={file.id}>
+          <span>{idx + 1}.</span><Link style={{ marginBlock: "0.5rem" }} to={file.file_path} target="_blank" >{fileName}</Link>
+        </div>
       })}
     </Container>
   )
