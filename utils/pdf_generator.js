@@ -35,10 +35,12 @@ async function generatePDF(extractedHtml) {
         };
 
         doc.pipe(fs.createWriteStream(pdfFilePath));
-
         content.forEach(obj => {
             const tagExist = tags[obj.tag];
-            if (tagExist) {
+            if(tagExist.moveDown){
+                doc.moveDown();
+            };
+            if (tagExist.fontSize) {
                 const alignmentRegex = new RegExp(`ql-align-(left|center|right|justify)`);
                 const matched = alignmentRegex.exec(obj.attributes.class);
                 if (matched) {
