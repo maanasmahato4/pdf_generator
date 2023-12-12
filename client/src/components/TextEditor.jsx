@@ -1,6 +1,7 @@
 import axios from "axios";
 import {
   Button,
+  ButtonGroup,
   Container
 } from "@mantine/core";
 import { useEffect, useState } from "react";
@@ -77,8 +78,11 @@ function TextEditor() {
   return (
     <Container style={{ marginBlock: "2rem", height: "100vh" }}>
       <h1 style={{ textAlign: "center" }}>editor</h1>
-      <ReactQuill style={{ height: "60vh", marginBlock: "1rem" }} modules={modules} theme="snow" onChange={setValue} placeholder="Content goes here..." />
-      <Button style={{ marginBlock: "4rem" }} type="button" onClick={handleSubmit}>Submit</Button>
+      <ReactQuill style={{ height: "60vh", marginBlock: "1rem" }} modules={modules} theme="snow" value={value || ''} onChange={setValue} placeholder="Content goes here..." />
+      <ButtonGroup>
+        <Button style={{ marginBlock: "4rem" }} type="button" onClick={handleSubmit}>Submit</Button>
+        <Button style={{ marginBlock: "4rem" }} color="red" type="button" onClick={() => setValue("")}>Clear</Button>
+      </ButtonGroup>
     </Container>
   )
 }
